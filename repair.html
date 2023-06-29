@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    color: #ED0E11;
+    font-size: 22px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: #FDF40B; font-size: 42px;">BIKES4U</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="sale.html">SALE</a>
+  <a href="repair.html">REPAIR</a>
+  <a href="hire.html">HIRE</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>REPAIR</h2>
+    <p><img src="https://cdn.pixabay.com/photo/2014/04/02/16/18/toolbox-306888_1280.png" width="520" height="411">&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  
+  <div class="column">
+    <p>At Bikes4U, we understand that even the most well-maintained bikes may occasionally require repair and maintenance. That's why we have a dedicated team of experienced professionals ready to provide you with top-notch bike repair services. </p>
+    <p>From minor tune-ups to major overhauls, our skilled technicians have the expertise to fix any bike-related issue. We use high-quality tools and genuine parts to ensure the best possible results and optimal performance for your beloved bike. Whether it's a flat tire, a faulty brake system, or a noisy drivetrain, we've got you covered. Simply bring your bike to our repair center or schedule a pickup, and we'll take care of the rest. </p>
+    <p>Trust Bikes4U for reliable and efficient bike repair services, so you can get back on the road with confidence and enjoy a smooth and safe ride every time.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+

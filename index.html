@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    color: #ED0E11;
+    font-size: 22px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: #FDF40B; font-size: 42px;">BIKES4U</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="sale.html">SALE</a>
+  <a href="repair.html">REPAIR</a>
+  <a href="hire.html">HIRE</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>HOME</h2>
+    <p><img src="https://cdn.pixabay.com/photo/2013/07/13/13/46/bicycle-161524_1280.png" width="422" height="300">&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  
+  <div class="column">
+    <p>Welcome to Bikes4U, your ultimate destination for all things biking! Whether you're an avid cyclist, a casual rider, or a complete beginner looking to embark on a two-wheeled adventure, our website is here to cater to all your cycling needs.</p>
+    <p>&nbsp;</p>
+    <p>At Bikes4U, we understand the joy and freedom that comes with riding a bike. That's why we have created a comprehensive online platform that offers a wide range of resources, products, and services to enhance your cycling experience. From high-quality bicycles to essential accessories, expert advice to engaging content, we've got you covered.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
